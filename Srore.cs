@@ -1,4 +1,3 @@
-using System.ComponentModel.DataAnnotations;
 using Microsoft.EntityFrameworkCore;
 namespace MyStore.Models
 {
@@ -8,11 +7,14 @@ namespace MyStore.Models
 
         public string Name { get; set; }
 
-        public string Description { get; set; }
+        public string Email { get; set; }
+
+        public string Password { get; set; }
     }
     class StoreDb : DbContext
     {
         public StoreDb(DbContextOptions options) : base(options) { }
         public DbSet<Store> Stores { get; set; } = null!;
     }
+
 }
