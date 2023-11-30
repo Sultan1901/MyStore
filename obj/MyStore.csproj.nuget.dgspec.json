@@ -38,6 +38,14 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "dependencies": {
+            "BCrypt.Net-Next": {
+              "target": "Package",
+              "version": "[4.0.3, )"
+            },
+            "CryptHash.Net": {
+              "target": "Package",
+              "version": "[3.6.1, )"
+            },
             "Microsoft.AspNetCore.Authentication.JwtBearer": {
               "target": "Package",
               "version": "[7.0.14, )"

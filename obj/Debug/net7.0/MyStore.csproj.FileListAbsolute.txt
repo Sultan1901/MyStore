@@ -263,3 +263,7 @@
 /Users/roman/Desktop/MyStore/bin/Debug/net7.0/runtimes/win/lib/net6.0/System.Drawing.Common.dll
 /Users/roman/Desktop/MyStore/bin/Debug/net7.0/runtimes/win/lib/net6.0/System.Security.Cryptography.ProtectedData.dll
 /Users/roman/Desktop/MyStore/bin/Debug/net7.0/runtimes/win/lib/net6.0/System.Windows.Extensions.dll
+/Users/roman/Desktop/MyStore/bin/Debug/net7.0/BCrypt.Net-Next.dll
+/Users/roman/Desktop/MyStore/bin/Debug/net7.0/CryptHash.Net.dll
+/Users/roman/Desktop/MyStore/bin/Debug/net7.0/Konscious.Security.Cryptography.Argon2.dll
+/Users/roman/Desktop/MyStore/bin/Debug/net7.0/Konscious.Security.Cryptography.Blake2.dll

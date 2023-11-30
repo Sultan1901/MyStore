@@ -11,8 +11,8 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 namespace MyStore.Migrations
 {
     [DbContext(typeof(StoreDb))]
-    [Migration("20231119134614_Sul")]
-    partial class Sul
+    [Migration("20231129143852_Auth")]
+    partial class Auth
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -32,10 +32,13 @@ namespace MyStore.Migrations
 
                     NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
 
-                    b.Property<string>("Description")
+                    b.Property<string>("Email")
                         .HasColumnType("text");
 
                     b.Property<string>("Name")
+                        .HasColumnType("text");
+
+                    b.Property<string>("Password")
                         .HasColumnType("text");
 
                     b.HasKey("Id");

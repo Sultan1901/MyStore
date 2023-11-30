@@ -1,4 +1,5 @@
 using Microsoft.EntityFrameworkCore;
+
 namespace MyStore.Models
 {
     public class Store
@@ -11,10 +12,12 @@ namespace MyStore.Models
 
         public string Password { get; set; }
     }
+
     class StoreDb : DbContext
     {
-        public StoreDb(DbContextOptions options) : base(options) { }
+        public StoreDb(DbContextOptions options)
+            : base(options) { }
+
         public DbSet<Store> Stores { get; set; } = null!;
     }
-
 }
