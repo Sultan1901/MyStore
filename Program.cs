@@ -1,20 +1,18 @@
 using System;
 using System.Diagnostics;
+using System.Runtime.CompilerServices;
 using System.Security.Cryptography;
 using Microsoft.AspNetCore.Cryptography.KeyDerivation;
 using Microsoft.AspNetCore.Mvc.ModelBinding.Metadata;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging.Console;
+using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
 using MyStore.Models;
+using Newtonsoft.Json.Linq;
 using NuGet.Protocol;
 using NuGet.Versioning;
 using BCr = BCrypt.Net;
-
-namespace Sultan
-{
-    public class MyClass { }
-}
 
 internal class Program
 {
@@ -84,20 +82,21 @@ internal class Program
             "/Login",
             async (StoreDb db, Store log) =>
             {
-                var check = db.Stores.Single(s => s.Name == log.Name);
-
-                var store = await db.Stores.FindAsync(check.Id);
-
-
+                var check = db.Stores.FirstOrDefault(s => s.Name == log.Name);
                 if (check is null)
-                    return Results.NotFound();
-                var passCheck = BCr.BCrypt.Verify(log.Password, check.Password);
-                Console.WriteLine(passCheck);
-                if (passCheck == false)
-                    return Results.BadRequest($"/Password Not Valid/");
-                await db.Stores.ToListAsync();
-                return Results.Ok("Login successfully");
+                    return Results.NotFound("User not found");
 
+                var passCheck = BCr.BCrypt.Verify(log.Password, check.Password);
+
+                if (!passCheck)
+                    return Results.BadRequest("Password Not Valid");
+                await db.Stores.ToListAsync();
+                
+                ;
+                // var ss = 
+                var token = check.ToJToken();
+                Console.WriteLine(token);
+                return Results.Ok(token);
             }
         );
 
