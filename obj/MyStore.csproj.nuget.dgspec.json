@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/roman/Desktop/MyStore/MyStore.csproj": {}
+    "/Users/roman/Desktop/MyStore1/MyStore.csproj": {}
   },
   "projects": {
-    "/Users/roman/Desktop/MyStore/MyStore.csproj": {
+    "/Users/roman/Desktop/MyStore1/MyStore.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/roman/Desktop/MyStore/MyStore.csproj",
+        "projectUniqueName": "/Users/roman/Desktop/MyStore1/MyStore.csproj",
         "projectName": "MyStore",
-        "projectPath": "/Users/roman/Desktop/MyStore/MyStore.csproj",
+        "projectPath": "/Users/roman/Desktop/MyStore1/MyStore.csproj",
         "packagesPath": "/Users/roman/.nuget/packages/",
-        "outputPath": "/Users/roman/Desktop/MyStore/obj/",
+        "outputPath": "/Users/roman/Desktop/MyStore1/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/roman/.nuget/NuGet/NuGet.Config"

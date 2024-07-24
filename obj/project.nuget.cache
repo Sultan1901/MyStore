@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "RIjgvgT8dVI9lak2AHndyv6Ek3jlkhY9B55CUjyrkFHB16yzwh3Z1uBmVaNQhAvx0q7biGy9kLftGfbga3EFFA==",
+  "dgSpecHash": "73xoQSLdM5ZgHnHS3DVHonbOjF1dAtSay3UWeigqAabwJ/2HYDRnYdE+r+U/QO/GwUOTw2UFszx/TEJE0bU4+A==",
   "success": true,
-  "projectFilePath": "/Users/roman/Desktop/MyStore/MyStore.csproj",
+  "projectFilePath": "/Users/roman/Desktop/MyStore1/MyStore.csproj",
   "expectedPackageFiles": [
     "/Users/roman/.nuget/packages/bcrypt.net-next/4.0.3/bcrypt.net-next.4.0.3.nupkg.sha512",
     "/Users/roman/.nuget/packages/crypthash.net/3.6.1/crypthash.net.3.6.1.nupkg.sha512",
